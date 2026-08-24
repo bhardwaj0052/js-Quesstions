@@ -11,7 +11,7 @@
 //  }
 // }
 // TODO: list the problems, then rewrite without forEac
-// code will work but if there is really some erro than this function can not tell what was the actual reason behind that;
+// code will work but if there is really some error than this function can not tell what was the actual reason behind that;
 
 function findFirstNegative(nums) {
  const result = nums.find((i)=> i<0)
@@ -19,4 +19,4 @@ function findFirstNegative(nums) {
     console.log('Found:', result);
   }
 }
-findFirstNegative([3, 7, 2, 5, 9]);
+findFirstNegative([3, 7, 2, -5, 9]);
