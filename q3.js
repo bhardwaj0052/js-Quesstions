@@ -15,3 +15,4 @@ const newArr = arr.myMap((e) => {
   return e * 2;
 });
 console.log(newArr);
+   

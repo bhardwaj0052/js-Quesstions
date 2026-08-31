@@ -16,4 +16,4 @@ async function  loadAllUsers(ids) {
  console.log('All done');
 }
 const ids = ["u1", "u2", "u3", "u4"];
- loadAllUsersBroken(ids)
+ loadAllUsers(ids)

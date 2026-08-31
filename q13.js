@@ -1,5 +1,14 @@
 function cartesianProduct(...arrays) {
- const cp=arrays.reduce((acc,cur)=>acc.flatmap(c))
+  return arrays.reduce((acc, cur) => {
+    return acc.flatMap(combo =>
+      cur.map(value => [...combo, value])
+    );
+  }, [[]]);
 }
-console.log(cartesianProduct([1, 2], ["a", "b"], [true, false]));
-// 8 triples: [1,'a',true], [1,'a',false], ...
+console.log(
+  cartesianProduct(
+    [1, 2],
+    ["a", "b"],
+    [true, false]
+  )
+);
